@@ -1,0 +1,6 @@
+<aura:component >
+    <aura:attribute name="buttonlabel" type="String" default="custom button"/>
+    <ui:button aura:id="button1" label="Button "/>
+    {!v.buttonlabel}
+    <ui:button label="Get label" press="{!c.getLabel}"/>	
+</aura:component>

@@ -1,0 +1,48 @@
+<!-- helloWorld.cmp -->
+<aura:component implements="force:appHostable">
+    <c:rectanglecomp /><br/><br/>
+   <!--
+    <c:JS_omponent />
+    <br></br><br></br>
+    <c:PhoneNumberInput />
+    <c:PhoneNumberOutput /><br></br><br></br>
+    <ui:button label="Add Numbers" press="{!c.add}"/>
+    <br></br><br></br>
+    <aura:attribute name="n1" type="Integer" default="1"/>
+    <aura:attribute name="n2" type="Integer" default="2"/>
+    <aura:attribute name="sum" type="Integer"/>
+    <aura:attribute name="Browswer" type="String"/>
+    <aura:attribute name="DayoftheWeek" type="String"/>
+    {!v.n1}+{!v.n2} = {!v.sum} <br></br><br></br>
+    
+    <c:DisplayAddress State="Tamil Nadu"/><br></br><br></br><br></br>
+    
+    <aura:attribute name="edit" type="Boolean" default="true"/>
+    <aura:if isTrue="{!v.edit}">
+        <ui:button label="Edit" press="{!c.add}"/>
+        <aura:set attribute="else">
+            You can’t edit this.
+        </aura:set>
+    </aura:if><br></br><br></br>
+    
+    Browswer Form Factor Details:<br></br>
+    {!$Browser.formFactor}<br></br><br></br>
+
+    <c:MOTD /><br></br><br></br>
+    
+    <aura:attribute name="mynumbers" type="List"/>
+    <ui:button label="Generate Numbers" press="{!c.generateNumbers}"/><br></br>
+    <aura:iteration var="n" items="{!v.mynumbers}">
+    	Number is : {!n}<br></br>
+    </aura:iteration><br></br><br></br>Registration Form Details:<br></br>
+    
+    <c:RegistrationForm /><br></br><br></br>
+    
+    <c:LC_ClientSideController /><br></br><br></br>
+    <c:toggleCSS /><br></br><br></br>
+    About Recoverable Error:<br></br>
+    <c:recoverableError /><br/><br/>
+    <c:validatenumber /><br/><br/>
+    <c:CalculateTotal /><br/><br/><br/><br/>
+    <c:OptyController />-->
+</aura:component>

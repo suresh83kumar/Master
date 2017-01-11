@@ -1,0 +1,6 @@
+<aura:component >
+    <aura:registerEvent name="inboundPhone" type="c:PhoneNumberEvent"/>
+    <aura:attribute name="inputtxt" type="String" default="Enter Phone No"/>
+    <ui:inputPhone aura:id="phone" label="phone" value="{!v.inputtxt}"/>
+    <ui:button label="Show Phone" press="{!c.copyText}"/>
+</aura:component>

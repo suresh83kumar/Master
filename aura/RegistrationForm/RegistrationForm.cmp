@@ -1,0 +1,17 @@
+<aura:component >
+    <aura:attribute name="First" type="String" default="John"/>
+    <aura:attribute name="Last" type="String" default="Lee"/>
+    <aura:attribute name="Phone" type="String" default="415-123-4567"/>
+    <aura:attribute name="Last2" type="String" default="Lee"/>
+    
+    <ui:inputText label="First Name" value="{!v.First}" updateOn="keyup"/>
+    <ui:inputText label="Last Name" value="{!v.Last}" updateOn="keyup"/>
+    <ui:inputSelect label="Salutation" value="{!v.Last}" updateOn="keyup">
+        <ui:inputSelectOption text="All Primary" label="Dr." value="true"/>
+        <ui:inputSelectOption text="All Primary" label="Mr."/>
+        <ui:inputSelectOption text="All Secondary" label="Mrs."/>
+        <ui:inputSelectOption text="All Secondary" label="Ms."/>
+	</ui:inputSelect>    
+    <ui:inputPhone label="Phone Number" value="{!v.Phone}" updateOn="keyup"/><br></br><br></br>
+    <ui:button label="Submit"/>
+</aura:component>

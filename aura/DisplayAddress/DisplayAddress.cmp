@@ -1,0 +1,11 @@
+<aura:component >
+    <aura:attribute name="Street" type="String" default="Site No:15, 5th Cross"/>
+    <aura:attribute name="City" type="String" default="Bangalore"/>
+    <aura:attribute name="PostalCode" type="String" default="560025"/>
+    <aura:attribute name="State" type="String" default="Karnataka"/>
+    
+    Street Name : {!v.Street} <br></br>
+    City : {!v.City}<br></br>
+    Postal code: {!v.PostalCode}<br></br>
+    State: {!v.State}
+</aura:component>

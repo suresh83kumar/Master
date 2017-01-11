@@ -1,0 +1,4 @@
+<aura:component >
+    <ui:button label="Toggle" press="{!c.hideseek}"/>
+	<p aura:id="text">Now you see me correct?</p>
+</aura:component>

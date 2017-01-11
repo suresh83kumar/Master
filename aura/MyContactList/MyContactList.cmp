@@ -1,0 +1,14 @@
+<aura:component controller="MyContactListController">
+    <aura:handler name="init" action="{!c.myAction}" value="{!this}"/>
+    <aura:attribute name="contacts" type="Contact[]"/>	
+    <ul>
+        <aura:iteration items="{!v.contacts}" var="contact">
+        <!--<li class="minli"> <h3>{!contact.Name}</h3> </li>
+            <li class="minli"> <h3>{!contact.Id}</h3> </li>
+            <ui:outputText value="{!contact.Name +' '+ contact.Id}"/>-->
+            <ui:inputText label="First Name" value="{!contact.Name}" updateOn="keyup"/>
+        </aura:iteration>
+	</ul> 
+    
+    <ui:button aura:id="button" label="Click me Bosss" press="{!c.navigate}"/>
+</aura:component>

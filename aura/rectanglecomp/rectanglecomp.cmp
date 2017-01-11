@@ -1,0 +1,42 @@
+<aura:component >
+	 <ltng:require styles="/resource/SLDS0122/assets/styles/salesforce-lightning-design-system-ltng.css" />      
+      <div class="slds">
+         <div style="width: 375px; float: left;">
+          <form class="slds-form--inline" > 
+              <div class="slds-form-element"> 
+                  <div class="slds-float--left">
+                  		<p>Step 1: Download your Client excel template
+							You can download a pre-filled template with last Year’s 
+                            plan data for your Account or you can start your plan with an empty template.
+						</p>
+                  
+                  </div>
+              </div>
+             </form>  
+        <div style="border-radius: 25px;
+            border: 2px solid #005fb2;
+            padding: 20px; 
+            width: 360px;
+            height: 180px;
+            margin-top: 25px;">      
+          <form class="slds-form--stack">
+              <div class="slds-form-element">
+                  <h4 class="slds-text-heading--small" style="margin-left: 10px ; margin-top: 10px;color:#005fb2">Download 3Yr Financial Template</h4>
+              </div> 
+              <div class="slds-form-element">
+                  <label class="slds-checkbox" style="margin-left: 10px ; margin-top: 10px;">                      
+                      <span class="slds-form-element__label">Check to download an empty</span>
+                      <span class="slds-checkbox--faux"></span>
+                      <input name="default" type="checkbox" aura:id="checkbox" onchange="{!c.onCheck}" />                     
+                  </label>
+              </div> 
+              <div class="slds-form-element" style="padding-top:5%;margin-left: 15%;margin-top: 10px;">
+                  <button class="slds-button slds-button--brand">Download 3Yr Template</button>                 
+              </div>
+          </form>
+      </div>      
+       </div>         
+       </div>    
+    
+    
+</aura:component>

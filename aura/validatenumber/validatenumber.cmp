@@ -1,0 +1,4 @@
+<aura:component >
+    Enter a Number: <ui:inputNumber aura:id="inputCmp"/><br/>
+    <ui:button label="click me" press="{!c.validatenum}"/>	
+</aura:component>
